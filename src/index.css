@@ -564,6 +564,15 @@ button.danger {
   flex-wrap: wrap;
 }
 
+/* ---------- Hidden login link (invisible but tappable) ---------- */
+.nav-link-hidden {
+  color: var(--bw-white) !important;
+  user-select: none;
+}
+.nav-link-hidden:hover {
+  color: var(--bw-white) !important;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
   .navbar { padding: 12px 16px; }
