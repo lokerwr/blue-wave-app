@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: blue-wave-app
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_SUPABASE_URL
+        value: https://pkfxhalniwzatdfjmkqz.supabase.co
+      - key: VITE_SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBrZnhoYWxuaXd6YXRkZmpta3F6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc5Mjc4MDIsImV4cCI6MjEwMzUwMzgwMn0.zeQZsAqJeqnDHk30JgHSkyYEcxa0DCg_rf3CKg_nOPw
