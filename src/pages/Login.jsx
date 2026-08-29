@@ -25,8 +25,7 @@ export default function Login() {
   return (
     <section className="auth-page">
       <div className="auth-card">
-        <h1>Admin Login</h1>
-        <p className="auth-sub">Sign in to manage shipments and tracking updates.</p>
+        <h1>Login</h1>
         <form onSubmit={handleSubmit}>
           <label>Email</label>
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoFocus />
