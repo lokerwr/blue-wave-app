@@ -30,7 +30,7 @@ export default function Navbar() {
             <button className="btn-link" onClick={handleLogout}>Logout</button>
           </>
         ) : (
-          <Link to="/admin/login">Admin Login</Link>
+          <Link to="/admin/login">Login</Link>
         )}
       </nav>
     </header>
